@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medicines>
+    <Medicine id="1">
+        <GenericName>Paracetamol</GenericName>
+        <DrugClass> Aminopenicillins</DrugClass>
+        <Strength>500 mg</Strength>
+        <Company>UNILAB, Inc</Company>
+        <Description>Relief and care for headache and fever.</Description>
+        <Treatments>
+            <Treatment1>Treat infections of the ear, nose, and throat. </Treatment1>
+            <Treatment2>Treat Infections of the genitourinary tract. </Treatment2>
+            <Treatment3>Infections of the skin and skin structure. </Treatment3>
+            <Treatment4>Infections of the lower respiratory tract. </Treatment4>
+            <Treatment5>Cure bladder infections. </Treatment5>
+        </Treatments>
+    </Medicine>
+    <Medicine id="2">
+        <GenericName>Cetirizine</GenericName>
+        <DrugClass>Antihistamines</DrugClass>
+        <Strength>10 mg</Strength>
+        <Company>Knoll Pharmaceuticals Ltd</Company>
+        <Description>An antihistamine used to relieve allergy symptoms. </Description>
+        <Treatments>
+            <Treatment1>Treat cold or allergy symptoms such as sneezing, itching and watery eyes.</Treatment1>
+            <Treatment2>sTreat high fever. </Treatment2>
+            <Treatment3>Treat reactions to insect bites and stings. </Treatment3>
+            <Treatment4>Treat eczema. </Treatment4>
+            <Treatment5>Treat conjunctivitis (red, itchy eye).</Treatment5>
+        </Treatments>
+    </Medicine>
+    <Medicine id="3">
+        <GenericName> Ambroxol</GenericName>
+        <DrugClass>Mucolytic</DrugClass>
+        <Strength> 5 ml</Strength>
+        <Company>Kala Amb Industrial Area</Company>
+        <Description>Ambroxol is kind of strong expectorant, clinically proven active mucolytic agent.</Description>
+        <Treatments>
+            <Treatment1>It is used to relieve chronic inflammatory pulmonary conditions. </Treatment1>
+            <Treatment2>It is used to treat bronchiectasis, bronchitis with bronchospasm asthma.</Treatment2>
+            <Treatment3>The medicine has local anesthetic properties which contribute to the soothing effect of the syrup.</Treatment3>
+            <Treatment4>Treatment of respiratory diseases associated with viscid or excessive mucus. </Treatment4>
+            <Treatment5>Ambroxol in this case relieves the patient from an excessive cough and thick sputum.</Treatment5>
+        </Treatments>
+    </Medicine>
+    <Medicine id="4" >
+        <GenericName>Neozep Forte</GenericName>
+        <DrugClass>Analgesic-antipyretic</DrugClass>
+        <Strength>10 mg / 2 mg / 500 mg</Strength>
+        <Company>PT. Medifarma Laboratories</Company>
+        <Description>For relief of cold and all its symptoms.</Description>
+        <Treatments>
+            <Treatment1>It is used to relieve relief of clogged nose.</Treatment1>
+            <Treatment2>It is used to treat body aches.</Treatment2>
+            <Treatment3>Treat Fever associated with the common cold.</Treatment3>
+            <Treatment4>Treatment minor respiratory tract infections.</Treatment4>
+            <Treatment5>Treat allergic rhinitis, sinusitis, and flu. </Treatment5>
+        </Treatments>
+    </Medicine>
+    <Medicine id="5" >
+        <GenericName>Cephalexin</GenericName>
+        <DrugClass>Cephalosporin antibiotics</DrugClass>
+        <Strength>500 mg</Strength>
+        <Company>PT. Medifarma Laboratories</Company>
+        <Description>Used to treat a wide variety of bacterial infections.</Description>
+        <Treatments>
+            <Treatment1>Treat Respiratory tract infections</Treatment1>
+            <Treatment2>Treat Skin and soft tissue infections.</Treatment2>
+            <Treatment3>Treat Genitourinary infections (urinary tract infections) </Treatment3>
+            <Treatment4>Treat Sinusitis.</Treatment4>
+            <Treatment5>Treat Endocarditis prevention.</Treatment5>
+        </Treatments>
+    </Medicine>
+</Medicines>

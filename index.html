@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Medicine Kit:</h2>
+
+    <button type="button" onclick="loadXMLDoc()">
+    Get my Medicine List:</button>
+    
+    <table id="demo" border="1" cellspacing="0" cellpadding="10" width="80%" align="center"">
+    </table>
+    
+    <script>
+        function loadXMLDoc() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    createTable(this);
+                }
+            };
+            xmlhttp.open("GET", "medicine.xml", true);
+            xmlhttp.send();
+        }
+        
+        function createTable(xml) {
+            var i, xmlDoc, txt;
+            
+            // Actual XML File Object mode
+            xmlDoc = xml.responseXML; 
+
+            txt = `
+                <tr>
+                    <th>Generic Name</th>
+                    <th>Drug Class</th>
+                    <th>Strenght</th>
+                    <th>Description</th>
+                    <th>Company Manufacturer</th>
+                    <th>Treatments</th>
+                </tr>
+            `;
+
+            var genericname = xmlDoc.getElementsByTagName("GenericName");
+            var drugclass =xmlDoc.getElementsByTagName("DrugClass");
+            var strength = xmlDoc.getElementsByTagName("Strength");
+            var description = xmlDoc.getElementsByTagName("Description");
+            var company = xmlDoc.getElementsByTagName("Company");
+
+            var treatment = xmlDoc.getElementsByTagName("Treatments");
+            var treatment1 = xmlDoc.getElementsByTagName("Treatment1");
+            var treatment2 = xmlDoc.getElementsByTagName("Treatment2");
+            var treatment3 = xmlDoc.getElementsByTagName("Treatment3");
+            var treatment4 = xmlDoc.getElementsByTagName("Treatment4");
+            var treatment5 = xmlDoc.getElementsByTagName("Treatment5");
+
+            for (i = 0; i< genericname.length; i++) {
+                txt += `
+                    <tr>
+                        <td>${genericname[i].childNodes[0].nodeValue}</td>
+                        <td>${drugclass[i].childNodes[0].nodeValue}</td>
+                        <td>${strength[i].childNodes[0].nodeValue}</td>
+                        <td>${description[i].childNodes[0].nodeValue}</td>
+                        <td>${company[i].childNodes[0].nodeValue}</td>
+
+                        <td>${treatment[i].childNodes[0].nodeValue}
+                            <li>${treatment1[i].childNodes[0].nodeValue}</li>
+                            <li>${treatment2[i].childNodes[0].nodeValue}</li>
+                            <li>${treatment3[i].childNodes[0].nodeValue}</li>
+                            <li>${treatment4[i].childNodes[0].nodeValue}</li>
+                            <li>${treatment5[i].childNodes[0].nodeValue}</li> 
+                        </td>
+                    </tr>
+                `;                
+            }
+
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>
